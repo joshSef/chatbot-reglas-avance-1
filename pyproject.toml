@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chatbot-reglas-avance-1"
+version = "0.1.0"
+description = "Chatbot educativo basado en reglas para orientar el Avance de Proyecto 1"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "nltk==3.9.1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest==8.3.5",
+  "pytest-cov==6.0.0",
+]
+
+[project.scripts]
+chatbot-avance = "asistente.chatbot:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+asistente = ["data/*.json"]
+
+[tool.pytest.ini_options]
+addopts = "-q --cov=asistente --cov-report=term-missing"
+testpaths = ["tests"]

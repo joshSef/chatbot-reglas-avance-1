@@ -1,0 +1,51 @@
+{
+  "intents": [
+    {
+      "tag": "saludo",
+      "patterns": ["hola", "buenos días", "buenas tardes", "qué tal"],
+      "responses": [
+        "Hola. Puedo orientarte sobre alcance, arquitectura, tecnologías, pruebas y evidencias del Avance 1.",
+        "¡Hola! ¿Qué duda tienes sobre el Avance de Proyecto 1?"
+      ]
+    },
+    {
+      "tag": "objetivo",
+      "patterns": ["objetivo", "propósito", "para qué sirve", "problema"],
+      "responses": [
+        "El objetivo es diseñar la arquitectura conceptual de un asistente e implementar un chatbot funcional basado en reglas para un problema real."
+      ]
+    },
+    {
+      "tag": "alcance",
+      "patterns": ["alcance", "incluye", "entregable", "qué debo hacer", "requisitos"],
+      "responses": [
+        "Este avance incluye problema, usuarios, alcance, arquitectura conceptual, reglas conversacionales, implementación funcional y evidencia de pruebas."
+      ]
+    },
+    {
+      "tag": "tecnologias",
+      "patterns": ["python", "nltk", "tecnología", "colab", "github", "herramientas"],
+      "responses": [
+        "La base usa Python 3.10+, NLTK para tokenizar, Google Colab para experimentar y GitHub para conservar versiones y evidencias."
+      ]
+    },
+    {
+      "tag": "arquitectura",
+      "patterns": ["arquitectura", "componentes", "flujo", "cómo funciona"],
+      "responses": [
+        "El flujo es: entrada del usuario, normalización y tokenización, evaluación de reglas, selección de intención y generación de una respuesta predefinida."
+      ]
+    },
+    {
+      "tag": "pruebas",
+      "patterns": ["prueba", "probar", "pytest", "evidencia", "validar"],
+      "responses": [
+        "Ejecuta pytest para validar normalización, clasificación y respuesta. Guarda la salida y las capturas necesarias en evidencias/."
+      ]
+    }
+  ],
+  "fallback": [
+    "No identifiqué esa consulta. Intenta preguntar por objetivo, alcance, arquitectura, tecnologías o pruebas.",
+    "Todavía no tengo una regla para eso. Puedes agregarla en intents.json como ejercicio."
+  ]
+}
