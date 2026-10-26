@@ -1,0 +1,59 @@
+Evidencia de diez conversaciones
+Fecha: 2026-10-25
+Configuración: RuleBasedChatbot(seed=7)
+
+Conversación 1
+Usuario: Hola
+Intención: saludo (puntaje 1)
+Chatbot: ¡Hola! ¿Qué duda tienes sobre el Avance de Proyecto 1?
+
+Conversación 2
+Usuario: ¿Cuál es el propósito del Avance 1?
+Intención: objetivo (puntaje 1)
+Chatbot: El objetivo es diseñar la arquitectura conceptual de un asistente e implementar un chatbot funcional basado en reglas para un problema real.
+
+Conversación 3
+Usuario: ¿Qué problema busca resolver el proyecto?
+Intención: objetivo (puntaje 1)
+Chatbot: El objetivo es diseñar la arquitectura conceptual de un asistente e implementar un chatbot funcional basado en reglas para un problema real.
+
+Conversación 4
+Usuario: ¿Qué incluye el entregable?
+Intención: alcance (puntaje 2)
+Chatbot: Este avance incluye problema, usuarios, alcance, arquitectura conceptual, reglas conversacionales, implementación funcional y evidencia de pruebas.
+
+Conversación 5
+Usuario: ¿Qué requisitos debo cubrir?
+Intención: alcance (puntaje 1)
+Chatbot: Este avance incluye problema, usuarios, alcance, arquitectura conceptual, reglas conversacionales, implementación funcional y evidencia de pruebas.
+
+Conversación 6
+Usuario: ¿Qué tecnología usa el chatbot?
+Intención: tecnologias (puntaje 1)
+Chatbot: La base usa Python 3.10+, NLTK para tokenizar, Google Colab para experimentar y GitHub para conservar versiones y evidencias.
+
+Conversación 7
+Usuario: ¿Cómo funciona la arquitectura?
+Intención: arquitectura (puntaje 4)
+Chatbot: El flujo es: entrada del usuario, normalización y tokenización, evaluación de reglas, selección de intención y generación de una respuesta predefinida.
+
+Conversación 8
+Usuario: ¿Cómo puedo validar el chatbot?
+Intención: pruebas (puntaje 1)
+Chatbot: Ejecuta pytest para validar normalización, clasificación y respuesta. Guarda la salida y las capturas necesarias en evidencias/.
+
+Conversación 9
+Usuario: ¿Qué evidencia debo guardar?
+Intención: pruebas (puntaje 1)
+Chatbot: Ejecuta pytest para validar normalización, clasificación y respuesta. Guarda la salida y las capturas necesarias en evidencias/.
+
+Conversación 10
+Usuario: ¿Cuál es el clima en Mérida?
+Intención: fallback (puntaje 0)
+Chatbot: No identifiqué esa consulta. Intenta preguntar por objetivo, alcance, arquitectura, tecnologías o pruebas.
+
+Resumen
+- 10 conversaciones ejecutadas.
+- 9 consultas del dominio clasificadas en una intención prevista.
+- 1 consulta fuera del dominio atendida con la respuesta fallback.
+- El comportamiento observado coincidió con el esperado en los 10 casos.
